@@ -1,0 +1,39 @@
+// SPDX-License-Identifier: GPL-3.0
+//第三课 bool；
+//&& 并；||或；
+//ture && false = fasle;
+//false && ture = false;
+//ture||ture = ture;
+//ture || falese = ture;
+pragma solidity ^0.8.0;
+contract BooleanTest{
+    bool _a;
+    int num1 = 100;
+    int num2 = 200;
+    function getBool()returns(bool){
+        reurun _a;
+    }
+    function getBool2()returns(bool){
+        reurun !_a;
+
+    }
+
+    function judge() returns(bool){
+        retun num1 = num2;
+    }
+    function judge2() returns(bool){
+        retun num1 != num2;
+    }
+    function and() returns(bool){
+        return (num1 == unm2) && ture;
+    }
+    function and2() returns(bool){
+        return (num1 !== unm2) && ture;
+    }
+    function or() returns(bool){
+        return (num1 !== unm2) || ture;
+    }
+    function or() returns(bool){
+        return (num1 !== unm2) || ture;
+    }
+}
