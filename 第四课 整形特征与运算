@@ -1,0 +1,21 @@
+// SPDX-License-Identifier: GPL-3.0
+//第四课 整形特性与运算；
+pragma solidity ^0.8.0;
+contract math{
+    //int可正可负； uint非负的整形；
+    int numa = 4;//int256==int;
+    uint numb = 2;//uint256==int;
+    function add(uint a,uint b)pure public returns(uint) {
+    return a+b;
+    }
+    function subtract(uint a,uint b)pure public  returns(uint) {
+    return a-b;
+    }
+    function divide(uint a,uint b)pure public  returns(uint) {
+    return a/b;
+    }
+
+    function ride(uint a,uint b)pure public  returns(uint) {
+    return a*b;
+    }
+}
