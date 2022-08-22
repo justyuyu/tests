@@ -10,30 +10,28 @@ contract BooleanTest{
     bool _a;
     int num1 = 100;
     int num2 = 200;
-    function getBool()returns(bool){
-        reurun _a;
+    function getBool()view public returns(bool){
+        return _a;
     }
-    function getBool2()returns(bool){
-        reurun !_a;
-
+    function getBool2()view public returns(bool){
+        return !_a;
     }
-
-    function judge() returns(bool){
-        retun num1 = num2;
+    function judge()view public returns(bool){
+        return num1 == num2;
     }
-    function judge2() returns(bool){
-        retun num1 != num2;
+    function judge2()view public returns(bool){
+        return num1 != num2;
     }
-    function and() returns(bool){
-        return (num1 == unm2) && ture;
+    function and()view public returns(bool){
+        return (num1 == num2) && true;
     }
-    function and2() returns(bool){
-        return (num1 !== unm2) && ture;
+    function and2()view public returns(bool){
+        return (num1 == num2) && true;
     }
-    function or() returns(bool){
-        return (num1 !== unm2) || ture;
+    function or1()view public returns(bool){
+        return (num1 != num2) || true;
     }
-    function or() returns(bool){
-        return (num1 !== unm2) || ture;
+    function or2()view public returns(bool){
+        return (num1 == num2) || false;
     }
 }
