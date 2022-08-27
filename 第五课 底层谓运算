@@ -1,0 +1,33 @@
+// SPDX-License-Identifier: GPL-3.0
+//第四课 底层畏运算；
+pragma solidity ^0.8.0;
+//uint8；
+//& 与 0与0 0与1 为0；
+//｜ 或 0与1=1 0与0=0；
+//～取反 0=1 1=0；
+// ^ 亦或操作 相等=0，不等=1；
+//<<左移一位；不够位显示0；
+//>>右移一位；不够位显示0；
+contract count{
+    uint8 a = 3;
+    uint8 b = 4;
+    function weiyu() view public returns(uint){
+        return a & b;
+    }
+    function weifan()view public returns(uint){
+        return ~a;
+    }
+    function huo()view public returns(uint){
+        return a | b;
+    }
+    function yu()view public returns(uint){
+    return a ^ b;
+    }
+    function zuoyi()view public returns(uint){
+    return a << 1;
+    }
+    function youyi()view public returns(uint){
+    return a >> 1;
+    }
+
+}
