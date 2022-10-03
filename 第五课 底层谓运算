@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0
-//第四课 底层畏运算；
+//第五课 底层畏运算；
 pragma solidity ^0.8.0;
 //uint8；
 //& 与 0与0 0与1 为0；
@@ -29,5 +29,19 @@ contract count{
     function youyi()view public returns(uint){
     return a >> 1;
     }
+// SPDX-License-Identifier: GPL-3.0
+//第六课 危险的整数溢出及异常处理；
+//限制内容的大小，节约资源，在合适的使用用合适的类型，比如uint8；
+    function flow() view public returns(uint){
+        uint8 mm = 255;
+        mm++;//mm=mm+1
+        return mm;
+    }
+    function flow2() view public returns(uint){
+        uint8 mm = 0;
+        mm--;//mm=mm-1
+        return mm;
+    }
 
 }
+//0益事件 向上溢出 和 向下溢出都是很危险的
