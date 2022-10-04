@@ -1,0 +1,21 @@
+//第九课 动态字节数组
+pragma solidity ^0.8.0;
+contract DynamicBytes{
+    bytes public name = new bytes(2);
+    function Initname()public{
+        name[0] = 0x7a;
+        name[1] = 0x68;
+    }
+    function getlength() view public  returns(uint){
+        return name.length;
+    }
+    function changeName()public {
+        name[0] = 0x88;
+    }
+    function changelength()public {
+        name.length - 5;
+    }
+    function pushtest()public{
+        name.push(0x99);
+    }
+}
