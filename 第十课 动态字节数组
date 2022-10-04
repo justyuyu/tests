@@ -1,4 +1,4 @@
-//第九课 动态字节数组
+//第十课 动态字节数组
 pragma solidity ^0.8.0;
 contract DynamicBytes{
     bytes public name = new bytes(2);
