@@ -61,4 +61,7 @@ contract ByteArray{
     function zuoyi2()view public returns(bytes1){
         return a >> 1;
     }
+//fuction changecontent()public{
+//   num3[0] = 2;
+//内部的值是不能修改的
 }
