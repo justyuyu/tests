@@ -45,3 +45,17 @@ contract count{
 
 }
 //0益事件 向上溢出 和 向下溢出都是很危险的
+
+//第七课 整型字面量
+    function intergerTest() returns(uint){
+    uint num = (2**800+1)-2**800;
+    return num;
+    }
+    //function intergerTest2() returns(uint){
+    //uint num = 2/4*1000;
+    //return num;
+    //solidity,暂时还不支持除法？
+    function intergerTest3() returns(uint){
+    uint num = 1111111111-222;
+    return num;
+    }
